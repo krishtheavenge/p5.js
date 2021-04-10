@@ -1,6 +1,6 @@
 function setup(){
  var  canvas = createCanvas(640,480);
- canvas.position(150,150);
+ canvas.center();
  video=createCapture(VIDEO);
  video.hide();
 
@@ -17,4 +17,9 @@ function draw(){
     rect(90,420,460,20);
     rect(90,40,20,400);
     rect(550,40,20,400);
+}
+
+
+function snap(){
+    save("mypic.png");
 }
